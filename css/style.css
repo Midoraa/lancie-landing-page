@@ -30,6 +30,21 @@
     border-radius: 5px 5px 100px 100px;
     border: 4px solid #00535F;
 }
+@media (max-width: 769px) {
+    .logo {
+        width: 90%;
+    }
+}
+@media (max-width: 520px) {
+    .logo {
+        width: 80%;
+    }
+}
+@media (max-width: 485px) {
+    .logo {
+        width: 70%;
+    }
+}
 
 /*** Spinner ***/
 #spinner {
@@ -461,7 +476,7 @@
 
 /*** Testimonial ***/
 .testimonial {
-    background: linear-gradient(rgba(136, 180, 78, .85), rgba(136, 180, 78, .85)), url(../img/testimonial-bg.jpg) center center no-repeat;
+    background: linear-gradient(rgba(4, 75, 68, 0.85), rgba(8, 63, 65, 0.85)), url(../img/tes_bg.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -492,14 +507,14 @@
     margin: 0 5px;
     width: 15px;
     height: 15px;
-    background: var(--primary);
+    background: var(--light);
     border-radius: 15px;
     transition: .5s;
 }
 
 .testimonial-carousel .owl-dot.active {
     width: 30px;
-    background: var(--dark);
+    background: var(--light);
 }
 
 
