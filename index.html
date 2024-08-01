@@ -199,7 +199,8 @@
                             <h4 class="text-primary">199.000</h4>
                         </div>
                         <div class="store-overlay">
-                            <a href="#contact" class="btn btn-primary rounded-pill py-2 px-4 m-2">Đặt mua<i class="fa fa-arrow-right ms-2"></i></a>                        </div>
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 m-2 open_modal_contact-1">Đặt mua<i class="fa fa-arrow-right ms-2"></i></button>                        
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -219,7 +220,7 @@
                             <h4 class="text-primary">159.000</h4>
                         </div>
                         <div class="store-overlay">
-                            <a href="#contact" class="btn btn-primary rounded-pill py-2 px-4 m-2">Đặt mua<i class="fa fa-arrow-right ms-2"></i></a>
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 m-2 open_modal_contact-2">Đặt mua<i class="fa fa-arrow-right ms-2"></i></button>                        
                         </div>
                     </div>
                 </div>
@@ -240,12 +241,12 @@
                             <h4 class="text-primary">199.000</h4>
                         </div>
                         <div class="store-overlay">
-                            <a href="#contact" class="btn btn-primary rounded-pill py-2 px-4 m-2">Đặt mua<i class="fa fa-arrow-right ms-2"></i></a>
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 m-2 open_modal_contact-3">Đặt mua<i class="fa fa-arrow-right ms-2"></i></button>                        
                         </div>
                     </div>
                 </div>
                 <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="#contact" class="btn btn-primary rounded-pill py-3 px-5">Đặt hàng</a>
+                    <button type="button" class="btn btn-primary rounded-pill py-3 px-5 open_modal_contact-4">Đặt hàng</button>
                 </div>
             </div>
         </div>
@@ -512,10 +513,10 @@
     </div>
   
 
-    <!-- Back to Top -->
+    <!-- Side button -->
     <a href="https://www.instagram.com/lancie.store.jewelry/" target="_blank" class="btn btn-lg btn-sticky btn-lg-square rounded-circle back-to-top"><i class="fa-brands fa-instagram"></i></a>
     <a href="https://www.facebook.com/profile.php?id=61561550561005" target="_blank" class="btn btn-lg btn-sticky btn-lg-square rounded-circle back-to-top-1"><i class="fa-brands fa-facebook"></i></a>
-    <button type="button" class="btn btn-lg btn-sticky btn-lg-square rounded-circle back-to-top-2">
+    <button type="button" class="btn btn-lg btn-sticky btn-lg-square rounded-circle back-to-top-2 open_modal_contact">
         <i class="fa-brands fa-wpforms"></i>
         <span class="tooltip">Liên hệ ngay</span>
     </button>
@@ -553,7 +554,19 @@
             });
         });
 
-        document.querySelector('.back-to-top-2').addEventListener('click', function() {
+        document.querySelector('.open_modal_contact').addEventListener('click', function() {
+            $('#contactModal').modal('show');
+        });
+        document.querySelector('.open_modal_contact-1').addEventListener('click', function() {
+            $('#contactModal').modal('show');
+        });
+        document.querySelector('.open_modal_contact-2').addEventListener('click', function() {
+            $('#contactModal').modal('show');
+        });
+        document.querySelector('.open_modal_contact-3').addEventListener('click', function() {
+            $('#contactModal').modal('show');
+        });
+        document.querySelector('.open_modal_contact-4').addEventListener('click', function() {
             $('#contactModal').modal('show');
         });
 
