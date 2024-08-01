@@ -98,11 +98,11 @@
                 <div class="col-lg-6">
                     <div class="row g-3">
                         <div class="col-6 text-end">
-                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" data-wow-delay="0.1s" src="img/daychuyen/img1.JPG" alt="">
-                            <img class="img-fluid bg-white w-75 wow fadeIn" data-wow-delay="0.2s" src="img/daychuyen/IMG4.jpg" alt="">
+                            <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.1s" src="img/daychuyen/img1.JPG" alt="">
+                            <!-- <img class="img-fluid bg-white w-75 wow fadeIn" data-wow-delay="0.2s" src="img/daychuyen/IMG4.jpg" alt=""> -->
                         </div>
                         <div class="col-6">
-                            <img class="img-fluid bg-white w-75 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/daychuyen/IMG2.jpg" alt="">
+                            <!-- <img class="img-fluid bg-white w-75 mb-3 wow fadeIn" data-wow-delay="0.3s" src="img/daychuyen/IMG2.jpg" alt=""> -->
                             <img class="img-fluid bg-white w-100 wow fadeIn" data-wow-delay="0.4s" src="img/daychuyen/img3.jpg" alt="">
                         </div>
                     </div>
@@ -295,7 +295,9 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-light rounded-pill py-3 px-5" href="#contact">Liên hệ</a>
+                        <div class=" d-flex justify-content-center">
+                            <a class="btn btn-light rounded-pill py-3 px-5" href="#contact">Liên hệ</a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -319,8 +321,8 @@
                     <img class="img-fluid" src="img/daychuyen/canhbuom/1.png" alt="">
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="section-title">
-                        <h3 class="display-7 text-primary">Cam kết chất lượng, giao nhận, bảo hành</h3>
+                    <div class="section-title-2">
+                        <h3 class="display-7 text-primary text-center">Cam kết chất lượng, giao nhận, bảo hành</h3>
                     </div>
                     <p class="mb-4">Sản phẩm 100% giống mô tả.</p>
                     <p class="mb-4">Đảm bảo chất lượng và chất liệu bạc 925.</p>
@@ -457,7 +459,7 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="videoModalLabel">Video Title</h5>
+                    <h5 class="modal-title" id="videoModalLabel">Sản phẩm của Lancie</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -472,9 +474,51 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title text-primary" id="contactModalLabel">Hãy để lại vài thông tin để chúng tôi liên hệ bạn</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <form id="contactForm">
+                <div class="form-group mb-3">
+                    <div class="d-flex">
+                        <span class="m-0" for="name">Họ tên: </span>
+                        <p class="text-danger m-0">*</p>
+                    </div>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="d-flex">
+                        <span for="contact">Số điện thoại Zalo:</span>
+                        <p class="text-danger m-0">*</p>
+                    </div>
+                    <input type="text" class="form-control" id="sdtzalo" name="contact" required>
+                </div>
+                <div class="form-group mb-3">
+                    <label for="message">Tin nhắn:</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                  </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary">Gửi</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+  
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="https://www.instagram.com/lancie.store.jewelry/" target="_blank" class="btn btn-lg btn-sticky btn-lg-square rounded-circle back-to-top"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=61561550561005" target="_blank" class="btn btn-lg btn-sticky btn-lg-square rounded-circle back-to-top-1"><i class="fa-brands fa-facebook"></i></a>
+    <button type="button" class="btn btn-lg btn-sticky btn-lg-square rounded-circle back-to-top-2">
+        <i class="fa-brands fa-wpforms"></i>
+        <span class="tooltip">Liên hệ ngay</span>
+    </button>
 
 
     <!-- JavaScript Libraries -->
@@ -484,6 +528,8 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
@@ -505,6 +551,52 @@
                 videoElement.pause();
                 videoElement.currentTime = 0;
             });
+        });
+
+        document.querySelector('.back-to-top-2').addEventListener('click', function() {
+            $('#contactModal').modal('show');
+        });
+
+
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            var templateParams = {
+                name: document.getElementById('name').value,
+                contact: document.getElementById('sdtzalo').value,
+                message: document.getElementById('message').value
+            };
+
+            emailjs.init(
+                {
+                    publicKey: "EbkUj_w2zWqjrQLFu",
+                }
+            );
+            emailjs.send('service_1894frh', 'template_xr9tw9u', templateParams).then(
+                (response) => {
+                    console.log('SUCCESS!', response.status, response.text);
+                    var contactModal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+                    contactModal.hide();
+                    Swal.fire({
+                        icon: "success",
+                        title: "Cảm ơn bạn, shop sẽ liên lạc lại với bạn nha ^.^",
+                        showConfirmButton: false,
+                        timer: 3000
+                    });
+                },
+                (error) => {
+                    console.log('FAILED...', error);
+                    var contactModal = bootstrap.Modal.getInstance(document.getElementById('contactModal'));
+                    contactModal.hide();
+                    Swal.fire({
+                        icon: "error",
+                        title: "Đã có lỗi xảy ra, xin vui lòng thử lại",
+                        showConfirmButton: false,
+                        timer: 2500
+                    });
+                },
+            );
         });
 
     </script>
