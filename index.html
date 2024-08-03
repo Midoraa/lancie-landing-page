@@ -44,8 +44,11 @@
     <div class="container-fluid bg-white sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-2 py-lg-0">
-                <a href="index.html" class="navbar-brand">
-                    <img class="img-fluid logo" src="img/image.png" alt="Logo">
+                <a href="index.html" class="navbar-brand a-logo">
+                    <div class="d-flex">
+                        <img class="logo" src="img/logo.png" alt="Logo">
+                        <img class="logo-col" src="img/image.png" alt="">
+                    </div>
                 </a>
                 <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -550,7 +553,7 @@
         // Function to auto click "Next" button every 1.5 seconds
         setInterval(function() {
             document.querySelector('#header-carousel .carousel-control-next').click();
-        }, 2000);
+        }, 3000);
 
         document.addEventListener('DOMContentLoaded', (event) => {
             var videoModal = document.getElementById('videoModal');
